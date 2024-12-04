@@ -2,11 +2,13 @@
 title "std"
 // INCIDENT RADIATION FIELD
 table SED "QSO.sed"
-nuL(nu) = 42 at 1.00 Ryd
+nuL(nu) = 42 at 4.76 Ryd
 // CHEMICAL COMPOSITION
 // GEOMETRY
 radius 21.48935 23.48935
-init "dlaw_exp.ini"
+init "dlaw_HI_exp.ini"
+#no line transfer
+#diffuse OTS
 sphere
 set save prefix "CIV_Lumin_42"
 stop column denstiy 24
